@@ -1,0 +1,22 @@
+{
+  "name": "vaultlet",
+  "version": "0.0.1",
+  "description": "A simple to use 'user-vault' system to easily add user registration and login to your node.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowsburney/vaultlet.git"
+  },
+  "keywords": [
+    "vaultlet"
+  ],
+  "author": "Philip Breuer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowsburney/vaultlet/issues"
+  },
+  "homepage": "https://github.com/shadowsburney/vaultlet#readme"
+}
