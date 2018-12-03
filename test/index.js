@@ -4,15 +4,15 @@ import express from "express";
 const app = express();
 
 // Setup
-import vaultlet from "../";
+import configy from "../";
 const options = {
     defaults: ['./conf.default.js'],
     directory: __dirname
 }
-vaultlet(options);
+configy(options);
 
 /*
-app.use('/vaultlet', );
+app.use('/configy', );
 
 // Start app
 const port = 3000;

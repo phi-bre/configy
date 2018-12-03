@@ -1,6 +1,6 @@
 import { File } from "./file"
 
-export const vaultlet = {
+export const configy = {
     directory: __dirname,
     defaults: []
 };
@@ -11,13 +11,13 @@ function middleware (req, res, next) {
 
 // Initialization
 export default function ({directory, defaults}) { // TODO: Add functionality to force "required: false" to be exported too
-    vaultlet.directory = directory || vaultlet.directory;
+    configy.directory = directory || configy.directory;
     
 
     defaults.forEach(def => {
         const file = new File(def);
         //file.verify();
-        vaultlet.defaults.push(file)
+        configy.defaults.push(file)
         file.save();
     });
     

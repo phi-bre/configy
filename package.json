@@ -1,5 +1,5 @@
 {
-  "name": "vaultlet",
+  "name": "configy",
   "version": "0.0.1",
   "description": "A simple to use 'vault' system to easily add remotely editable configurations to your node.js application",
   "main": "index.js",
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shadowsburney/vaultlet.git"
+    "url": "git+https://github.com/shadowsburney/configy.git"
   },
   "keywords": [
-    "vaultlet"
+    "configy"
   ],
   "author": "Philip Breuer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shadowsburney/vaultlet/issues"
+    "url": "https://github.com/shadowsburney/configy/issues"
   },
-  "homepage": "https://github.com/shadowsburney/vaultlet#readme"
+  "homepage": "https://github.com/shadowsburney/configy#readme"
 }

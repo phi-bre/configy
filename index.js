@@ -1,2 +1,2 @@
-import vaultlet from "./src/vaultlet";
-export default vaultlet;
+import configy from "./src/vaultlet";
+export default configy;
