@@ -1,3 +1,3 @@
-# vaultlet
+# configy
 
-A simple to use 'vault' system to easily add remotely editable configurations to your node.js application.
+A simple to use config system to easily add remotely editable configurations to your node.js application.

@@ -2,7 +2,7 @@
 import _path from "path";
 import _fs from "fs";
 import check from "check-types";
-import { vaultlet } from "./vaultlet";
+import { configy } from "./configy";
 
 export const properties = [
     "required",
@@ -18,7 +18,7 @@ export const properties = [
 export class File {
     
     constructor (path, config) {
-        this.path = _path.join(vaultlet.directory, path);
+        this.path = _path.join(configy.directory, path);
         try {
             this.tree = require(this.path);
         } catch (error) {
@@ -26,7 +26,7 @@ export class File {
         }
         this.verifyDefaultStructure();
         if (config) {
-            this.config = _path.join(vaultlet.directory, config);
+            this.config = _path.join(configy.directory, config);
         } else {
             this.config = this.path.split('.')[0] + ".json";
         }
