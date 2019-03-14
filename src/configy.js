@@ -1,46 +1,24 @@
-import { File } from "./file"
+import {File} from "./file"
 
 export const configy = {
     directory: __dirname,
     defaults: []
 };
 
-function middleware (req, res, next) {
+function middleware(req, res, next) {
     console.log('Hey');
 }
 
 // Initialization
-export default function ({directory, defaults}) { // TODO: Add functionality to force "required: false" to be exported too
+export default function ({directory, descs}) { // TODO: Add functionality to force "required: false" to be exported too
     configy.directory = directory || configy.directory;
     
-
-    defaults.forEach(def => {
-        const file = new File(def);
+    descs.forEach(desc => {
+        const file = new File(desc);
         //file.verify();
-        configy.defaults.push(file)
+        configy.defaults.push(file);
         file.save();
     });
     
     return middleware;
-}
-
-
-
-function iterateObject (obj, callback) {
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            const o = obj[key];
-        
-            if (check.object(o) || check.array(o)) {
-                // If attribute is another obj: repeat
-                iterateObject(o, callback);
-            } else {
-                if (check.function(callback)) {
-                    callback(o);
-                } else {
-                    throw new Error("Missing callback function. Check your parameters");
-                }
-            }
-        }
-    }
 }

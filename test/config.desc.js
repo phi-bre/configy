@@ -1,23 +1,21 @@
 module.exports = {
     foobar: {
         required: true,
-        type: 'String',
-        default: 'Hello World!',
-        allowed: [
-            'Hello',
-            'World',
-            'Hello World'
-        ]
+        type: 'string',
+        default: "Hello World!",
+        allowed: false
     },
     foo: {
         bar: {
             required: true,
-            type: 'String',
+            type: 'string',
+            default: 'awd'
         },
         test: {
             required: false,
-            type: 'Number',
-            static: true
+            type: 'number',
+            static: true,
+            default: 0
         }
     },
     this: {

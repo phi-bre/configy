@@ -1,12 +1,13 @@
-
 // Main test file
 import express from "express";
+
 const app = express();
 
 // Setup
 import configy from "../";
+
 const options = {
-    defaults: ['./conf.default.js'],
+    descs: ['./config.desc.js'],
     directory: __dirname
 }
 configy(options);

@@ -1,2 +1,2 @@
-import configy from "./src/vaultlet";
+import configy from "./src/configy";
 export default configy;
